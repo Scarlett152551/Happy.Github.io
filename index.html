@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打开看看</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            text-align: center;
+            background-color: #ffe4e1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            color: #ff69b4;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 20px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>超级喜欢我的家宇！！！</h1>
+    <p id="days"></p>
+    <p>跟你在一起的每一天都好幸福</p>
+
+    <script>
+        const importantDate = new Date(2023, 9, 7); 
+        const today = new Date();
+        const daysTogether = Math.floor((today - importantDate) / (1000 * 60 * 60 * 24));
+        document.getElementById("days").innerText = `我们已经在一起 ${daysTogether} 天啦！`;
+    </script>
+</body>
+</html>
